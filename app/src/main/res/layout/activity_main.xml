@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="40dp"
+        android:text="@string/currency_converter"
+        android:textSize="39sp" />
+
+    <LinearLayout
+        android:layout_width="237dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:autofillHints="write here"
+            android:hint="@string/enter_text_here"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:textColorHint="#8D6E63" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@string/from_currency"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp">
+
+            <Spinner
+                android:id="@+id/from"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                tools:ignore="TouchTargetSizeCheck" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@string/to_currency"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp">
+
+            <Spinner
+                android:id="@+id/to"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                tools:ignore="TouchTargetSizeCheck" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="162dp"
+        android:layout_marginLeft="162dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginRight="162dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/convert"
+        android:textColor="#BBDEFB" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="188dp"
+        android:layout_height="68dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:hint="@string/result"
+        android:textColorHint="#8D6E63" />
+
+
+</LinearLayout>
